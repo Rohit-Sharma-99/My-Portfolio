@@ -1,0 +1,174 @@
+/* General Styling */
+body.tab-body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    color: #ffffff;
+    overflow-x: hidden;
+    perspective: 1000px;
+}
+
+/* Container */
+.tab-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header Section */
+.tab-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle, #1e293b, #2a3d54);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    animation: slideInFromTop 1.2s ease-in-out;
+}
+
+.tab-title {
+    font-size: 3rem;
+    color: #00c3ff;
+    text-shadow: 0 3px 10px rgba(0, 195, 255, 0.8);
+    margin: 0;
+}
+
+.tab-subtitle {
+    font-size: 1.2rem;
+    color: #a0c4ff;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Section Titles */
+.tab-section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00c3ff;
+    text-align: center;
+    animation: popIn 0.8s ease-in-out;
+}
+
+/* Table Styling */
+.tab-table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+    transform: rotateX(0deg);
+    animation: tableAnimation 1.5s ease-in-out;
+}
+
+.tab-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #2a3d54;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tab-table th, .tab-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #3e536a;
+    font-size: 1.1rem;
+}
+
+.tab-table th {
+    background-color: #00c3ff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tab-table td {
+    color: #a0c4ff;
+}
+
+.tab-table tr:hover {
+    background: rgba(0, 195, 255, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* List Styling */
+.tab-list {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: square;
+    color: #a0c4ff;
+    font-size: 1.1rem;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.tab-list li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 195, 255, 0.3);
+}
+
+/* Footer Section */
+.tab-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #1e293b;
+    color: #a0c4ff;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tableAnimation {
+    from {
+        transform: rotateX(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
