@@ -179,17 +179,17 @@ var referrerUrl = document.referrer;
 console.log("Referrer URL: " + referrerUrl);
 
 // Check if geolocation is supported
-if ("geolocation" in navigator) {
-    // Get user's current location
-    navigator.geolocation.getCurrentPosition(function(position) {
-        var latitude = position.coords.latitude;
-        var longitude = position.coords.longitude;
+// if ("geolocation" in navigator) {
+//     // Get user's current location
+//     navigator.geolocation.getCurrentPosition(function(position) {
+//         var latitude = position.coords.latitude;
+//         var longitude = position.coords.longitude;
 
-        console.log("Latitude: " + latitude + ", Longitude: " + longitude);
-    });
-} else {
-    console.log("Geolocation is not supported.");
-}
+//         console.log("Latitude: " + latitude + ", Longitude: " + longitude);
+//     });
+// } else {
+//     console.log("Geolocation is not supported.");
+// }
 
 var platform = navigator.platform;
 console.log("Platform: " + platform);
